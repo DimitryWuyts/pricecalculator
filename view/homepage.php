@@ -9,12 +9,11 @@
 </head>
 <body>
 <?php
-require 'includes/header.php';
 require  'model/User.php';?>
 <section>
     <h4>Hello <?php echo $User->getName()?>,</h4>
     <p>Put your content here.</p>
 </section>
-<?php require 'includes/footer.php'?>
 </body>
 </html>
+
