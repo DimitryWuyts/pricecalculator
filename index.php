@@ -9,7 +9,6 @@ require  'view/includes/header.php';
 
 
 
-
 //include all your model files here
 require 'model/User.php';
 //include all your controllers here
