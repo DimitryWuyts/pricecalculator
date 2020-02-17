@@ -6,18 +6,10 @@ error_reporting(E_ALL);
 //include header
 require  'view/includes/header.php';
 
-
-
-
 //include all your model files here
 require 'model/User.php';
 //include all your controllers here
 require 'controller/HomepageController.php';
-
-
-
-
-
 
 //include footer
 require  'view/includes/footer.php';
@@ -27,3 +19,4 @@ require  'view/includes/footer.php';
 //$controller = new HomepageController();
 //
 //$controller->render($_GET, $_POST);
+
