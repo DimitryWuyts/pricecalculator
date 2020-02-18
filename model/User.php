@@ -10,7 +10,7 @@ class User
     private $customerName;
 
     // constructor (parent)
-    public function user__construct(int $customerId, string $name, int $customerGroupId)
+    public function __construct(int $customerId, string $name, int $customerGroupId)
     {
         $this->customerId = $customerId;
         $this->customerGroupId = $customerGroupId;
