@@ -2,6 +2,10 @@
 //strict typing
 declare(strict_types = 1);
 // json for customers
+class Controller
+{
+    public function data()
+    {
         $jsonCustomers = file_get_contents('customers.json');
         // Converts it into a PHP object
         $dataCustomers = json_decode($jsonCustomers);
@@ -19,4 +23,5 @@ declare(strict_types = 1);
 
         //load the view
         require 'view/homepage.php';
-
+    }
+}
