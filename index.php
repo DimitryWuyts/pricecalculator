@@ -22,5 +22,5 @@ require 'controller/HomepageController.php';
 
 $controller = new User();
 //
-//$controller->render($_GET, $_POST);
+$controller->__construct();
 
