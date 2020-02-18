@@ -22,5 +22,5 @@ require 'controller/HomepageController.php';
 
 $controller = new User();
 //
-$controller->__construct();
+$controller->user__construct();
 
