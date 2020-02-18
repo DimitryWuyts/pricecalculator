@@ -25,7 +25,7 @@
 <label for="Customers">Customers</label>
 
 <select id="Customers">
-    <option value="Product"></option>
+    <option value="Product"><?php echo array_push($dataCustomers)?></option>
     <option value="Customer"></option>
 
 </select>
