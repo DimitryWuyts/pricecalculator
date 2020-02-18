@@ -19,14 +19,13 @@
 
 <select id="Products">
     <option value="Product"></option>
-    <option value="Customer"></option>
 
 </select>
+
 <label for="Customers">Customers</label>
 
 <select id="Customers">
-    <option value="Product"><?php echo array_push($dataCustomers)?></option>
-    <option value="Customer"></option>
+    <option value="Customer"><?php echo array_push($dataCustomers)?></option>
 
 </select>
 

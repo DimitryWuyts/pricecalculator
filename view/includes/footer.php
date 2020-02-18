@@ -1,3 +1,0 @@
-<footer>
-    &copy; BeCode
-</footer>
