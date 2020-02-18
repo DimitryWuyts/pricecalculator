@@ -12,13 +12,15 @@ require 'view/includes/header.php';
 require  'view/includes/footer.php';
 //include models
 require 'model/User.php';
+require 'model/products.php';
+require 'model/group.php';
 //include controllers
 require 'controller/HomepageController.php';
 
 //you could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
 //this file should never be more than 20 lines of code!
 
-//$controller = new HomepageController();
+$controller = new User();
 //
 //$controller->render($_GET, $_POST);
 
