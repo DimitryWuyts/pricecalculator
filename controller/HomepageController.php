@@ -6,9 +6,11 @@ class Controller
 {
     public function data()
     {
+
         $jsonCustomers = file_get_contents('customers.json');
         // Converts it into a PHP object
         $dataCustomers = json_decode($jsonCustomers);
+        print_r($dataCustomers);
 
 // json for products
         $jsonProducts = file_get_contents('products.json');

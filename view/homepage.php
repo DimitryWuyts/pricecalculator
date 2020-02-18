@@ -15,14 +15,14 @@
     <h4>Hello </h4>
     <p>Put your content here.</p>
 </section>
-<label for="Products">Products::</label>
+<label for="Products">Products</label>
 
 <select id="Products">
     <option value="Product"></option>
     <option value="Customer"></option>
 
 </select>
-<label for="Customers">Customers:</label>
+<label for="Customers">Customers</label>
 
 <select id="Customers">
     <option value="Product"></option>
