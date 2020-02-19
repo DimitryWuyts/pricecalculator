@@ -6,24 +6,17 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-//include header
-require 'view/includes/header.php';
-//include footer
-require  'view/includes/footer.php';
-//include models
-require 'model/User.php';
-require 'model/products.php';
-require 'model/group.php';
-//include controllers
+
 require 'controller/HomepageController.php';
 
-
+session_start();
+if (!isset($_SESSION)) {
+    $controller::$products[] = $_SESSION['products'];
+    $controller::$customers[] = $_SESSION['customers'];
+}
 
 
 //you could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
 //this file should never be more than 20 lines of code!
-
-$controller = new Controller();
-//
-$controller->data();
-
+$controller = new HomepageController();
+$controller->render($_GET, $_POST);
