@@ -22,7 +22,7 @@
             <?php
             foreach ($productDataArray as $product){ ?>
 
-                <option value="<?php echo $product->getProductsId();?>"><?php echo $product->getProductName();?><option value="<?php echo $product->getDescription();?>"><?php echo $product->getPrice().'£'?> </option> </option>
+                <option value="<?php echo $product->getProductsId();?>"><?php echo $product->getProductName();?><option ><?php echo $product->getPrice().'£'.$product->getDescription()?> </option> </option>
 
             <?php } ?>
 </select>
