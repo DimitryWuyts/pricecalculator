@@ -84,19 +84,24 @@ class HomepageController
     public function render(array $GET, array $POST)
     {
         $userDataArray = [];
-//        $customerDataArray = [];
-//        $groupDataArray = [];
+        $productDataArray = [];
+//      $groupDataArray = [];
 
 
         $loader = new dataloader();
         $allGroupData = $loader->fetchData('groups.json');
         $allCustomerData = $loader->fetchData('customers.json');
         $allProductData = $loader->fetchData('products.json');
+
         foreach ($allCustomerData as $user) {
             array_push($userDataArray, new User($user['name'], $user['id'], $user['group_id']));
         }
-        var_dump($userDataArray);
-        //load the view
+
+        foreach ($allProductData as $product) {
+            array_push($productDataArray, new Products($product['name'], $product['id'], $product['description'], $product['price']));
+        }
+
+        //load the homepage
         require 'view/homepage.php';
 }}
 
@@ -107,7 +112,7 @@ function whatIsHappening() {
     var_dump($_POST);
     echo '<h2>$_COOKIE</h2>';
     var_dump($_COOKIE);
-//    echo '<h2>$_SESSION</h2>';
-//    var_dump($_SESSION);
+//   echo '<h2>$_SESSION</h2>';
+//   var_dump($_SESSION);
 }
 whatIsHappening();

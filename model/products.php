@@ -11,7 +11,7 @@ class Products
     private $price;
 
     // constructor (parent)
-    public function __construct(int $productsId, string $productsName, string $description, int $price)
+    public function __construct(string $productsName,int $productsId, string $description, float $price)
     {
         $this->productsId = $productsId;
         $this->productsName = $productsName;
@@ -32,7 +32,7 @@ class Products
     {
         return $this->description;
     }
-    public function getPrice() : int
+    public function getPrice() : float
     {
         return $this->price;
     }
