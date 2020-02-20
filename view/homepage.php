@@ -21,8 +21,8 @@
             <?php
             foreach ($productDataArray as $product){ ?>
 
-                <option value="<?php echo $product->getProductsId();?>"><?php echo $product->getProductName()."<br />\n". $product-> getPrice()."£";?> </option>
-<option><?php echo $product->getDescription();?></option>
+                <option value="<?php echo $product->getProductsId();?>"><?php echo $product->getProductName()."<br />\n". $product-> getPrice()."£";?><p id="description"><?php echo $product->getDescription();?></p> </option>
+
             <?php } ?>
 </select>
     </section>
