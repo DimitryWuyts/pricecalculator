@@ -1,12 +1,14 @@
 <?php
-//enable strict typing
-declare(strict_types=1);
-//enable errors
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
-
+////enable strict typing
+//declare(strict_types=1);
+////enable errors
+//ini_set('display_errors', '1');
+//ini_set('display_startup_errors', '1');
+//error_reporting(E_ALL);
+//
+?>
+<link rel="stylesheet" href="view/style.css">
+<?php
 require 'controller/HomepageController.php';
 
 session_start();
@@ -20,3 +22,4 @@ if (!isset($_SESSION)) {
 //this file should never be more than 20 lines of code!
 $controller = new HomepageController();
 $controller->render($_GET, $_POST);
+?>

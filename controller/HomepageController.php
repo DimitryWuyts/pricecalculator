@@ -2,8 +2,6 @@
 //strict typing
 declare(strict_types = 1);
 require 'dataloader.php';
-//include header
-require 'view/includes/header.php';
 //include footer
 require  'view/includes/footer.php';
 //include models
@@ -103,16 +101,16 @@ class HomepageController
 
         //load the homepage
         require 'view/homepage.php';
-}}
+    }}
 
-function whatIsHappening() {
-    echo '<h2>$_GET</h2>';
-    var_dump($_GET);
-    echo '<h2>$_POST</h2>';
-    var_dump($_POST);
-    echo '<h2>$_COOKIE</h2>';
-    var_dump($_COOKIE);
-//   echo '<h2>$_SESSION</h2>';
-//   var_dump($_SESSION);
-}
-whatIsHappening();
+//function whatIsHappening() {
+//    echo '<h2>$_GET</h2>';
+//    var_dump($_GET);
+//    echo '<h2>$_POST</h2>';
+//    var_dump($_POST);
+//    echo '<h2>$_COOKIE</h2>';
+//    var_dump($_COOKIE);
+////   echo '<h2>$_SESSION</h2>';
+////   var_dump($_SESSION);
+//}
+//whatIsHappening();
