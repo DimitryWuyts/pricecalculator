@@ -12,7 +12,7 @@
 <?php require 'includes/header.php'?>
 <section>
     <h4>Hello Peasants </h4>
-    <img id="queen" src="../assets/images/8c1b95154cbf96634852af8f503ece22.jpg">
+    <img id="queen" src="../img/queen.jpg">
 </section>
 <form method="post">
     <section>
