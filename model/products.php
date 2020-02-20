@@ -36,4 +36,5 @@ class Products
     {
         return $this->price;
     }
+
 }

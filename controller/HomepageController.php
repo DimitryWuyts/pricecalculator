@@ -99,18 +99,25 @@ class HomepageController
             array_push($productDataArray, new Products($product['name'], $product['id'], $product['description'], $product['price']));
         }
 
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+
+           $customerPost = $_POST["customers"];
+            $productPost = $_POST["products"];
+var_dump($productDataArray[$productPost] ->getPrice());
+
+        }
         //load the homepage
         require 'view/homepage.php';
     }}
 
-//function whatIsHappening() {
-//    echo '<h2>$_GET</h2>';
-//    var_dump($_GET);
-//    echo '<h2>$_POST</h2>';
-//    var_dump($_POST);
-//    echo '<h2>$_COOKIE</h2>';
-//    var_dump($_COOKIE);
-////   echo '<h2>$_SESSION</h2>';
-////   var_dump($_SESSION);
-//}
-//whatIsHappening();
+function whatIsHappening() {
+    echo '<h2>$_GET</h2>';
+    var_dump($_GET);
+    echo '<h2>$_POST</h2>';
+    var_dump($_POST);
+    echo '<h2>$_COOKIE</h2>';
+    var_dump($_COOKIE);
+//   echo '<h2>$_SESSION</h2>';
+//   var_dump($_SESSION);
+}
+whatIsHappening();

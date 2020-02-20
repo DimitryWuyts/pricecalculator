@@ -16,8 +16,8 @@
 </section>
 <form method="post">
     <section>
-        <label for="Products">Products</label>
-         <select id="Products">
+        <label for="products">Products</label>
+         <select name="products" id="products">
             <?php
             foreach ($productDataArray as $product){ ?>
 
@@ -27,8 +27,8 @@
 </select>
     </section>
     <section>
-        <label for="Customers">Customers</label>
-        <select id="Customers">
+        <label for="customers">Customers</label>
+        <select name="customers" id="customers">
     <?php
     foreach ($userDataArray as $user){ ?>
 
